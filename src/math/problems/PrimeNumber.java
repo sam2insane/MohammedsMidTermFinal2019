@@ -12,6 +12,31 @@ public class PrimeNumber {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 *
 		 */
+		String primeNum = " ";
+		for(int x =2; x<=10000; x++){   //doing with 10000, to get less CPU life cycle
+			int count = 0;
+			for (int num = x; num>=1;num--){
+				if(x%num == 0){
+					count = count+1;
+				}
+			}
+			if (count ==2){
+				primeNum = primeNum+ x +" ";
+
+			}
+
+
+		}
+
+		System.out.println("prime number for 2 to 10 thousands are : ");
+		System.out.println(primeNum);
+
+
+
+
+
+
+
 
 	}
 
